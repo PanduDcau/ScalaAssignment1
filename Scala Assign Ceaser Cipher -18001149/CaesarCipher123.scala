@@ -58,6 +58,7 @@ val key = (scala.io.StdIn.readLine("Shift By: ").toInt + alphabet.size) % alphab
 
 			var list:String =encriptMsg(key,inputText);
 			println(" The Encrypt Message: " ,list );
+	//Key1 should be the negative number of the shifted number.So you need to put negative value of the shift/key when u decrypt
 val key1 = (scala.io.StdIn.readLine("Shift By (Put the negative number of the Shift) : ").toInt + alphabet.size) % alphabet.size	
 	var encryptText:String = list;
 	//var encryptText = scala.io.StdIn.readLine("Encrypt Message: ")
