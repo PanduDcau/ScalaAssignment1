@@ -16,7 +16,7 @@ object BankAccount extends App {
       val balc=intrest(bank).reduce((x, y)=>x+y)
 	  println("Sum of All Account Balances :"+balc)
   
-	val interest=(b:List[Account])=>b.map(x=>(x.nic, x.accno, if(x.balance<0){x.balance+0.1} else x.balance+0.05))
+	val interest=(b:List[Account])=>b.map(x=>(x.nic, x.accno, if(x.balance<0){x.balance*1.1} else x.balance*1.05))
 	println("Final Balances of All Accounts After Apply the Interest Function :"+interest(bank))
 	
 	
